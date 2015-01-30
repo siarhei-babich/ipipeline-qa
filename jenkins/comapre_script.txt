@@ -1,0 +1,6 @@
+compare rules-based
+load "%1" "%2"
+log verbose append:"\\QDEIGOFSS01.dv.ipipenet.com\e$\jenkins\jobs\AGLA\workspace\logs\%fn_time% %date% BS log.txt"
+criteria rules-based ignore-unimportant
+expand all
+folder-report layout:side-by-side options:display-mismatches,include-file-links,column-none output-to:"%3" output-options:wrap-none,html-color
